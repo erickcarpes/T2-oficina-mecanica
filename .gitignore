@@ -1,0 +1,5 @@
+__pycache__/
+.preview/
+T2_entrega.zip
+*.pyc
+.DS_Store

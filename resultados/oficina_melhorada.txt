@@ -1,0 +1,66 @@
+Resultado da Fila 1: G/G/1/10, chegadas entre 6.0...12.0, atendimento entre 4.0...8.0
+chegadas externas: 137026
+clientes atendidos (entradas): 144548
+perdas: 0
+saidas (atendimentos concluidos): 144541
+E[S]: 6.0000 min | MU: 0.166667 clientes/min
+indices de desempenho:
+  populacao (N):          0.7652 clientes
+  vazao (D):              0.117265 clientes/min
+  utilizacao (U):         0.7036 (70.36%)
+  tempo de resposta (W):  6.5251 min
+  vazao observada:        0.117195 clientes/min (saidas/tempo global)
+estados:
+  0: 365574.6885 min (29.64%)
+  1: 795004.7362 min (64.46%)
+  2: 69669.0309 min (5.65%)
+  3: 2997.8012 min (0.24%)
+  4: 94.3910 min (0.01%)
+  5: 0.0620 min (0.00%)
+
+Resultado da Fila 2: G/G/4/14, atendimento entre 18.0...30.0
+chegadas externas: 0
+clientes atendidos (entradas): 150984
+perdas: 0
+saidas (atendimentos concluidos): 150961
+E[S]: 24.0000 min | MU: 0.041667 clientes/min
+indices de desempenho:
+  populacao (N):          3.0135 clientes
+  vazao (D):              0.122427 clientes/min
+  utilizacao (U):         0.7346 (73.46%)
+  tempo de resposta (W):  24.6149 min
+  vazao observada:        0.122400 clientes/min (saidas/tempo global)
+estados:
+  0: 1398.4947 min (0.11%)
+  1: 41648.4637 min (3.38%)
+  2: 329184.5732 min (26.69%)
+  3: 520598.3326 min (42.21%)
+  4: 262046.3919 min (21.25%)
+  5: 65911.6662 min (5.34%)
+  6: 10892.1998 min (0.88%)
+  7: 1494.2601 min (0.12%)
+  8: 156.9002 min (0.01%)
+  9: 9.4274 min (0.00%)
+
+Resultado da Fila 3: G/G/1/8, atendimento entre 4.0...8.0
+chegadas externas: 0
+clientes atendidos (entradas): 135959
+perdas: 0
+saidas (atendimentos concluidos): 135948
+E[S]: 6.0000 min | MU: 0.166667 clientes/min
+indices de desempenho:
+  populacao (N):          0.8548 clientes
+  vazao (D):              0.110291 clientes/min
+  utilizacao (U):         0.6617 (66.17%)
+  tempo de resposta (W):  7.7500 min
+  vazao observada:        0.110227 clientes/min (saidas/tempo global)
+estados:
+  0: 417179.0346 min (33.83%)
+  1: 596574.3245 min (48.37%)
+  2: 201530.0958 min (16.34%)
+  3: 17657.6673 min (1.43%)
+  4: 395.3219 min (0.03%)
+  5: 4.2657 min (0.00%)
+
+tempo global da simulacao: 1233340.7098 min
+tempo medio por simulacao: 123334.0710 min

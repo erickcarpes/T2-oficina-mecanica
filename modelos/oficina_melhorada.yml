@@ -1,0 +1,67 @@
+# Modelo do T2 - Oficina mecanica (situacao MELHORADA)
+#
+# Mudancas em relacao a oficina.yml (marcadas em cada fila):
+#   OFICINA: 3 -> 4 mecanicos, capacidade 12 -> 14 e atendimento 20..35 -> 18..30
+#            (contratacao de um mecanico + elevador/ferramenta que reduz o tempo)
+#   QUALIDADE: capacidade 6 -> 8 e retrabalho 15% -> 10%
+#            (treinamento da equipe reduz a devolucao de veiculos)
+#   RECEPCAO: capacidade 8 -> 10 (evita perda de ordens na chegada)
+!PARAMETERS
+
+arrivals:
+   RECEPCAO: 5.0
+
+queues:
+   RECEPCAO:
+      servers: 1
+      capacity: 10
+      minArrival: 6.0
+      maxArrival: 12.0
+      minService: 4.0
+      maxService: 8.0
+   OFICINA:
+      servers: 4
+      capacity: 14
+      minService: 18.0
+      maxService: 30.0
+   QUALIDADE:
+      servers: 1
+      capacity: 8
+      minService: 4.0
+      maxService: 8.0
+
+network:
+-  source: RECEPCAO
+   target: OFICINA
+   probability: 0.95
+-  source: RECEPCAO
+   target: EXTERIOR
+   probability: 0.05
+-  source: OFICINA
+   target: QUALIDADE
+   probability: 0.90
+-  source: OFICINA
+   target: RECEPCAO
+   probability: 0.05
+-  source: OFICINA
+   target: EXTERIOR
+   probability: 0.05
+-  source: QUALIDADE
+   target: OFICINA
+   probability: 0.10
+-  source: QUALIDADE
+   target: EXTERIOR
+   probability: 0.90
+
+rndnumbersPerSeed: 100000
+seeds:
+- 1
+- 2
+- 3
+- 4
+- 5
+- 6
+- 7
+- 8
+- 9
+- 10

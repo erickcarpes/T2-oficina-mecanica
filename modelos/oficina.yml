@@ -1,0 +1,66 @@
+# Modelo do T2 - Oficina mecanica (situacao ATUAL)
+#
+# Rede de 3 filas com realimentacao:
+#   RECEPCAO (abertura de ordem de servico) -> OFICINA (reparo) -> QUALIDADE
+#   QUALIDADE devolve 15% dos veiculos para a OFICINA (retrabalho)
+#   OFICINA devolve 5% para a RECEPCAO (orcamento de pecas adicionais)
+# So a RECEPCAO recebe clientes do exterior.
+!PARAMETERS
+
+arrivals:
+   RECEPCAO: 5.0
+
+queues:
+   RECEPCAO:
+      servers: 1
+      capacity: 8
+      minArrival: 6.0
+      maxArrival: 12.0
+      minService: 4.0
+      maxService: 8.0
+   OFICINA:
+      servers: 3
+      capacity: 12
+      minService: 20.0
+      maxService: 35.0
+   QUALIDADE:
+      servers: 1
+      capacity: 6
+      minService: 4.0
+      maxService: 8.0
+
+network:
+-  source: RECEPCAO
+   target: OFICINA
+   probability: 0.95
+-  source: RECEPCAO
+   target: EXTERIOR
+   probability: 0.05
+-  source: OFICINA
+   target: QUALIDADE
+   probability: 0.90
+-  source: OFICINA
+   target: RECEPCAO
+   probability: 0.05
+-  source: OFICINA
+   target: EXTERIOR
+   probability: 0.05
+-  source: QUALIDADE
+   target: OFICINA
+   probability: 0.15
+-  source: QUALIDADE
+   target: EXTERIOR
+   probability: 0.85
+
+rndnumbersPerSeed: 100000
+seeds:
+- 1
+- 2
+- 3
+- 4
+- 5
+- 6
+- 7
+- 8
+- 9
+- 10

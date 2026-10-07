@@ -1,0 +1,67 @@
+Resultado da Fila 1: G/G/1/8, chegadas entre 6.0...12.0, atendimento entre 4.0...8.0
+chegadas externas: 146423
+clientes atendidos (entradas): 153490
+perdas: 0
+saidas (atendimentos concluidos): 153482
+E[S]: 6.0000 min | MU: 0.166667 clientes/min
+indices de desempenho:
+  populacao (N):          0.7518 clientes
+  vazao (D):              0.116443 clientes/min
+  utilizacao (U):         0.6987 (69.87%)
+  tempo de resposta (W):  6.4561 min
+  vazao observada:        0.116390 clientes/min (saidas/tempo global)
+estados:
+  0: 397376.8341 min (30.13%)
+  1: 853862.4860 min (64.75%)
+  2: 64963.6195 min (4.93%)
+  3: 2397.1106 min (0.18%)
+  4: 83.3734 min (0.01%)
+  5: 5.7907 min (0.00%)
+
+Resultado da Fila 2: G/G/3/12, atendimento entre 20.0...35.0
+chegadas externas: 0
+clientes atendidos (entradas): 143865
+perdas: 21406
+saidas (atendimentos concluidos): 143761
+E[S]: 27.5000 min | MU: 0.036364 clientes/min
+indices de desempenho:
+  populacao (N):          10.7363 clientes
+  vazao (D):              0.109070 clientes/min
+  utilizacao (U):         0.9998 (99.98%)
+  tempo de resposta (W):  98.4352 min
+  vazao observada:        0.109018 clientes/min (saidas/tempo global)
+estados:
+  0: 110.8523 min (0.01%)
+  1: 96.0303 min (0.01%)
+  2: 241.9346 min (0.02%)
+  3: 594.4346 min (0.05%)
+  4: 690.4474 min (0.05%)
+  5: 1005.7013 min (0.08%)
+  6: 2858.0000 min (0.22%)
+  7: 8240.1726 min (0.62%)
+  8: 27958.6823 min (2.12%)
+  9: 101796.2072 min (7.72%)
+  10: 325568.8525 min (24.69%)
+  11: 516998.3914 min (39.21%)
+  12: 332529.5077 min (25.22%)
+
+Resultado da Fila 3: G/G/1/6, atendimento entre 4.0...8.0
+chegadas externas: 0
+clientes atendidos (entradas): 129515
+perdas: 0
+saidas (atendimentos concluidos): 129505
+E[S]: 6.0000 min | MU: 0.166667 clientes/min
+indices de desempenho:
+  populacao (N):          0.7347 clientes
+  vazao (D):              0.098253 clientes/min
+  utilizacao (U):         0.5895 (58.95%)
+  tempo de resposta (W):  7.4779 min
+  vazao observada:        0.098207 clientes/min (saidas/tempo global)
+estados:
+  0: 541300.2700 min (41.05%)
+  1: 597360.0044 min (45.30%)
+  2: 168572.8198 min (12.78%)
+  3: 11456.1200 min (0.87%)
+
+tempo global da simulacao: 1318689.2142 min
+tempo medio por simulacao: 131868.9214 min
