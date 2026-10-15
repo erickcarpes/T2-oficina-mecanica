@@ -4,8 +4,7 @@ Trabalho T2 da disciplina **Simulação e Métodos Analíticos** (PUCRS, 2026/2)
 Modela, simula e melhora uma **rede de filas com realimentação** de uma oficina
 mecânica, usando o simulador de eventos discretos desenvolvido no T1.
 
-> Grupo: **T2 - 690 - 16** · Entrega: 14/10/2026 · Integrantes: preencher na capa
-> (placeholder `Integrante 1..6`).
+> Grupo: **T2 - 690 - 16** · Entrega: 14/10/2026
 
 ## A realidade modelada
 
@@ -94,15 +93,9 @@ Requer Python 3 e PyYAML (`pip install pyyaml`):
 cd T2
 python3 simulador.py modelos/oficina.yml            # situação atual
 python3 simulador.py modelos/oficina_melhorada.yml  # situação melhorada
-python3 gerar_planilha.py                           # planilha de índices
-python3 gerar_desenho.py                            # desenhos da rede
-python3 gerar_apresentacao.py                       # PPTX
-python3 gerar_pdf.py                                # HTML + gráficos (PDF via navegador)
 ```
 
-Dependências: o simulador usa apenas `pyyaml`. Os scripts auxiliares de geração
-usam bibliotecas adicionais: `gerar_planilha.py` (openpyxl), `gerar_desenho.py`
-e `gerar_pdf.py` (matplotlib) e `gerar_apresentacao.py` (python-pptx).
+Dependências: o simulador usa apenas `pyyaml`.
 
 Veja [`INSTRUCOES.md`](INSTRUCOES.md) para o formato do `.yml` e a descrição da saída.
 
@@ -122,17 +115,11 @@ T2/
 │   └── indices_oficina.csv
 ├── apresentacao/
 │   ├── T2_Oficina_Mecanica.pptx     apresentação
-│   ├── T2_Oficina_Mecanica.pdf      apresentação em PDF
-│   ├── T2_Oficina_Mecanica.html     fonte dos slides em PDF
 │   └── rede_filas_*.png, grafico_*.png
-├── gerar_planilha.py
-├── gerar_desenho.py
-├── gerar_apresentacao.py
-├── gerar_pdf.py
 ├── INSTRUCOES.md
 └── README.md
 ```
 
 ## Vídeo
 
-> Link do vídeo (YouTube) comentando a apresentação: **preencher**.
+> Link do vídeo (YouTube) comentando a apresentação: https://youtu.be/62k1lB8cOqM
